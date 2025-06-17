@@ -21,8 +21,8 @@ This project is a simple React + TypeScript application that displays New York T
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/YOUR_GITHUB_USERNAME/nyt-books-react-app.git
-   cd nyt-books-react-app
+   git clone https://github.com/JosueArce/hashworksreactproject.git
+   cd hashworksreactproject-books-react-app
    ```
 
 2. **Install dependencies:**
@@ -33,10 +33,10 @@ This project is a simple React + TypeScript application that displays New York T
 
 3. **Configure your NYT API key:**
 
-   - Create a `.env` file in the project root:
+   - Update the `.env` file in the project root:
 
      ```sh
-     echo "REACT_APP_NYT_API_KEY=your-nyt-api-key-here" > .env
+     echo "REACT_APP_NYT_API_KEY=your-nyt-api-key-here"
      ```
 
    - Replace `your-nyt-api-key-here` with your actual NYT Books API key.
