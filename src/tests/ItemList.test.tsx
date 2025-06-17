@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import ItemList from '../components/ItemList';
 import { BookList } from '../types/nyt';
@@ -36,8 +36,14 @@ describe('ItemList Component', () => {
     test('renders ItemList with books', () => {
         render(<ItemList lists={mockLists} />);
         expect(screen.getByText(/Fiction/i)).toBeInTheDocument();
-        expect(screen.getByText(/Book One/i)).toBeInTheDocument();
-        expect(screen.getByText(/Book Two/i)).toBeInTheDocument();
+        // Check for expand/collapse hint
+        expect(screen.getByText(/\(Click to expand\)/i)).toBeInTheDocument();
+        // Category should be collapsed by default
+        expect(screen.queryByText('Book One')).toBeNull();
+        // Expand the category
+        fireEvent.click(screen.getByText(/Fiction/i));
+        expect(screen.getByText('Book One')).toBeVisible();
+        expect(screen.getByText('Book Two')).toBeVisible();
         expect(screen.getByText(/Author A/i)).toBeInTheDocument();
         expect(screen.getByText(/Author B/i)).toBeInTheDocument();
     });

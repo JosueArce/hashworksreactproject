@@ -17,7 +17,6 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
-    "@types/babel__template": "^7.4.4",
     "@types/jest": "^26.0.0",
     "@types/react": "^17.0.87",
     "@types/react-dom": "^17.0.0",

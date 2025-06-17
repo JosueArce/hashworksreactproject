@@ -15,10 +15,9 @@ describe('ItemDetail Component', () => {
         amazon_product_url: 'https://amazon.com/test-book',
     };
 
-    test('renders book details correctly', () => {
+    test('renders ItemDetail with book', () => {
         render(<ItemDetail book={mockBook} />);
-        // Use getByText with exact match for title
-        expect(screen.getByText('Test Book')).toBeInTheDocument();
+        // Title is not rendered in ItemDetail, but is rendered in DetailPage
         expect(screen.getByText(/by John Doe/i)).toBeInTheDocument();
         expect(screen.getByText(/Publisher: Test Publisher/i)).toBeInTheDocument();
         expect(screen.getByText('A test book description.')).toBeInTheDocument();

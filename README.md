@@ -36,10 +36,12 @@ This project is a simple React + TypeScript application that displays New York T
    - Update the `.env` file in the project root:
 
      ```sh
-     echo "REACT_APP_NYT_API_KEY=your-nyt-api-key-here"
+     echo "REACT_APP_NYT_API_KEY=luydo7iA2JcaEZHg1YmzgyUxgGijoByt" > .env
      ```
 
-   - Replace `your-nyt-api-key-here` with your actual NYT Books API key.
+   - The included demo/test API key is: `luydo7iA2JcaEZHg1YmzgyUxgGijoByt`
+
+   - If you need your own, get one at [NYT Developer Portal](https://developer.nytimes.com/docs/books-product/1/overview).
 
 ## Running the App
 
