@@ -22,7 +22,7 @@ This project is a simple React + TypeScript application that displays New York T
 
    ```sh
    git clone https://github.com/JosueArce/hashworksreactproject.git
-   cd hashworksreactproject-books-react-app
+   cd hashworks-react-app
    ```
 
 2. **Install dependencies:**
@@ -35,9 +35,7 @@ This project is a simple React + TypeScript application that displays New York T
 
    - Update the `.env` file in the project root:
 
-     ```sh
-     echo "REACT_APP_NYT_API_KEY=luydo7iA2JcaEZHg1YmzgyUxgGijoByt" > .env
-     ```
+     - REACT_APP_NYT_API_KEY=luydo7iA2JcaEZHg1YmzgyUxgGijoByt
 
    - The included demo/test API key is: `luydo7iA2JcaEZHg1YmzgyUxgGijoByt`
 
