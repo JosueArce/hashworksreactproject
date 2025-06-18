@@ -43,7 +43,14 @@ This project is a simple React + TypeScript application that displays New York T
 
 ## Running the App
 
-To start the development server:
+If you are using Node.js v17 or newer, run the following command to avoid compatibility issues:
+
+```sh
+export NODE_OPTIONS=--openssl-legacy-provider
+npm start
+```
+
+Otherwise, to start the development server:
 
 ```sh
 npm start
